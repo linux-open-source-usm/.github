@@ -1,38 +1,17 @@
 name: 📋 Dev Report
 description: Template para reportar historias de usuario con criterios de aceptación y tareas de desarrollo
-title: "[DEV]: "
+title: "[HU]: "
 labels: ["dev", "enhancement"]
 body:
-  - type: markdown
+  - type: textarea
+    id: user-story
     attributes:
+      label: Historia de Usuario
+      description: Describe la funcionalidad desde la perspectiva del usuario final
       value: |
-        ## Historia de Usuario
-        Describe la funcionalidad desde la perspectiva del usuario final.
-
-  - type: input
-    id: user-role
-    attributes:
-      label: Como
-      description: ¿Qué tipo de usuario eres? (ej. visitante, administrador, colaborador)
-      placeholder: "visitante"
-    validations:
-      required: true
-
-  - type: textarea
-    id: user-want
-    attributes:
-      label: Quiero
-      description: ¿Qué funcionalidad o capacidad deseas?
-      placeholder: "entender de inmediato la propuesta de valor y tener un camino claro para unirme"
-    validations:
-      required: true
-
-  - type: textarea
-    id: user-goal
-    attributes:
-      label: Para
-      description: ¿Cuál es el objetivo o beneficio que buscas?
-      placeholder: "convertir mi interés en una acción concreta (unirme/colaborar) sin fricción ni dudas"
+        **Como** _visitante_
+        **Quiero** entender de inmediato la propuesta de valor y tener un camino claro para unirme
+        **Para** convertir mi interés en una acción concreta (unirme/colaborar) sin fricción ni dudas
     validations:
       required: true
 
@@ -47,8 +26,11 @@ body:
     id: acceptance-criteria
     attributes:
       label: Criterios de Aceptación
-      description: Lista los criterios que deben cumplirse (usa formato `- [ ]` para checkboxes)
-      placeholder: "- [ ] Criterio 1\n- [ ] Criterio 2\n- [ ] Criterio 3"
+      description: Lista los criterios que deben cumplirse
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ]
     validations:
       required: true
 
@@ -62,8 +44,11 @@ body:
     id: dev-tasks
     attributes:
       label: Tareas
-      description: Lista de tareas técnicas para implementar la historia (usa formato `- [ ]` para checkboxes)
-      placeholder: "- [ ] Tarea 1\n- [ ] Tarea 2\n- [ ] Tarea 3"
+      description: Lista de tareas técnicas para implementar la historia
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ]
     validations:
       required: true
 
